@@ -1,11 +1,8 @@
 :root {
   --hue-neutral: 200;
-  --hue-wrong: 0;
-  --hue-correct: 145;
 }
 
 body {
-  --hue: var(--hue-neutral);
   padding: 0;
   margin: 0;
   display: flex;
@@ -13,15 +10,15 @@ body {
   height: 100vw;
   justify-content: center;
   align-items: center;
-  background-color: hsl(var(--hue), 100%, 20%);
+  background-color: lightblue;
 }
 
 body.correct {
-  --hue: var(--hue-correct);
+  background-color: lightgreen;
 }
 
 body.wrong {
-  --hue: var(--hue-wrong);
+  background-color: indianred
 }
 
 .container {
@@ -30,7 +27,7 @@ body.wrong {
   background-color: white;
   border-radius: 5px;
   padding: 10px;
-  box-shadow: 0 0 10px 2px;
+  box-shadow: 0 0 8px 2px;
 }
 
 .btn-grid {
